@@ -17,8 +17,5 @@ class MainApp(App):
             RightSideContent()
         )
 
-    def on_mount(self):
-        self.notify(message="test", title="title")
-
 if __name__ == "__main__":
     MainApp().run()

@@ -1,12 +1,10 @@
-from textual.containers import Horizontal, Container, Vertical
+from textual.containers import Container, Vertical
 from textual.widgets import Label
 
-class RightSideContent(Horizontal):
+class RightSideContent(Vertical):
     def compose(self):
-        yield Vertical(
-            NewsTicker(),
-            MainContainer()
-        )
+        yield NewsTicker()
+        yield MainContainer()
 
 
 class NewsTicker(Label):
@@ -18,4 +16,4 @@ class NewsTicker(Label):
 
 class MainContainer(Container):
     def on_mount(self):
-        self.border_title = "0 stdins"
+        self.border_title = "0 Processes"

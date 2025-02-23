@@ -9,11 +9,11 @@ class Sidebar(Vertical):
 class SidebarCurrencyTracker(Vertical):
     def compose(self):
         yield Label("0", id="sidebarCurrencyAmount")
-        yield Label("stdins", id="sidebarCurrencyName")
+        yield Label("Processes", id="sidebarCurrencyName")
 
 class SidebarMenu(VerticalScroll):
     def compose(self):
-        yield Button("stdin", disabled=True)
+        yield Button("Processes", disabled=True)
         yield Button("Achievements")
         yield Button("Statistics")
         yield Button("Settings")

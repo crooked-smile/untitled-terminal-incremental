@@ -1,3 +1,5 @@
+![Game Banner](assets/uti-banner.png)
+---
 # Untitled Terminal Incremental
 An incremental game about nothing or something. 
 
